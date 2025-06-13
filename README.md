@@ -13,8 +13,8 @@
 
 Clean and minimal UI
 ## HOW TO PLAY
-[]git clone https://github.com/your-username/word-master.git
-[]cd word-master
+- git clone https://github.com/your-username/word-master.git
+- cd word-master
 
 🧑‍💻 Author
 Created by srisubaram
