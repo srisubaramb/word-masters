@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #FDF7F4;
+    overflow: hidden;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    border-bottom: 2px solid red;
+    margin: 0px 2px;
+}
+.heading {
+    text-align: center;
+    grid-column: 2;
+}
+.info{
+    background-color: rgba(196, 16, 16, 0.834);
+    color: white;
+    font-size: 20px;
+    height: 5vh;
+    border-radius: 10px;
+    justify-self: end;
+    
+    text-align: center;
+    align-content: center;
+    padding: 9px;
+    margin-right: 5px;
+}
+.info-success {
+    background-color: rgba(10, 227, 111, 0.91);
+}
+
+.raindow-animation {
+    animation: rainbow 2s infinite;
+}
+@keyframes rainbow {
+    0% {
+       color: rgb(235, 18, 235);
+    }
+    25% {
+        color: rgb(137, 8, 230);
+    }
+    50% {
+        color: green;
+    }
+    100% {
+        color: red;
+    }
+}
+
+.scoreboard-letter {
+    width: 35px;  
+    height: 35px;
+    font-size: 20px;
+    background-color: #cccccc7b;
+    margin: 2px;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.scoreboard-letter:hover {
+    box-shadow: 1px 1px 5px #ccc;
+    outline: none;
+    cursor: pointer;
+}
+.sprial {
+    text-align: center;
+    font-size: 35px;
+    margin: 3%;
+}
+.loading {
+    animation: load 1s linear infinite;
+}
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.main {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; */
+    grid-template-columns: repeat(5, 1fr);
+    width: fit-content;
+    margin: 3% auto;
+    row-gap: 10px;
+    column-gap: 4px;
+}
+.winner-rainbow {
+    animation: rainbow 1s infinite alternate;
+}
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.wrong {
+    background-color: rgb(171, 171, 171);
+    color: white;
+}
+.present {
+    background-color: rgba(252, 172, 0, 0.933);
+    color: white;
+}
+.blink-red {
+    animation: blink-red 1s linear;
+}
+@keyframes blink-red {
+    0% {    
+        border: rgba(255, 0, 0, 0.358) 2px solid; 
+    }
+    50% {
+        border: red 2px solid;
+    }
+    100% {
+        border: rgba(255, 0, 0, 0.414) 2px solid;
+    }
+}
